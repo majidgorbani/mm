@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="46033dfd-c278-46ff-94fe-6f19558edadf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52215/DeliveryMailboxService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DeliveryMailboxService.xsd" MetadataType="Schema" ID="a0182c81-6667-4881-9ffa-34e394031668" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DeliveryMailboxService2.xsd" MetadataType="Schema" ID="d728106f-ae72-4190-b69d-e22c5515b6f8" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DeliveryMailboxService3.xsd" MetadataType="Schema" ID="32dc2e98-1ae9-40ce-9d51-a16e7e732ac7" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DeliveryMailboxService4.xsd" MetadataType="Schema" ID="48f43e7f-9b13-4e71-8e61-183b59ad7080" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DeliveryMailboxService5.xsd" MetadataType="Schema" ID="e2a0f93c-09d0-4a3f-9dc8-5fd23ba0a342" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DeliveryMailboxService.wsdl" MetadataType="Wsdl" ID="7c85b0f5-61c4-40c1-9120-4cf48c116d1c" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DeliveryMailboxService1.wsdl" MetadataType="Wsdl" ID="a45cfa80-f171-4cc9-bf64-e752e9414825" SourceId="1" SourceUrl="http://localhost:52215/DeliveryMailboxService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

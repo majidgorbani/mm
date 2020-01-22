@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SE.GOV.MM.Integration.DeliveryMailbox.Signing</RootNamespace>
+    <AssemblyName>SE.GOV.MM.Integration.DeliveryMailbox.Signing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handler\SealedDeliveryHandler.cs" />
+    <Compile Include="Handler\SecureDeliveryHandler.cs" />
+    <Compile Include="Handler\SignedDeliveryHandler.cs" />
+    <Compile Include="Handler\SignXmlDocumentHandler.cs" />
+    <Compile Include="Helper\ConvertHelper.cs" />
+    <Compile Include="Helper\RecipientHelper.cs" />
+    <Compile Include="Helper\SerializeHelper.cs" />
+    <Compile Include="Helper\SigningCertificateHelper.cs" />
+    <Compile Include="Helper\ValidateMailHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy\SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy.csproj">
+      <Project>{6a468c41-4643-4cdf-9978-c20cf8877b6d}</Project>
+      <Name>SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Log\SE.GOV.MM.Integration.Log.csproj">
+      <Project>{924fd5ea-7cbd-4b10-bc6b-55476d86ea4c}</Project>
+      <Name>SE.GOV.MM.Integration.Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

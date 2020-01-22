@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+  <!-- 
+  <Text>
+     Id is used in the application to get this text!. Used in code.
+          <Id></Id> 
+     Name is just a describing name of the text. Not used in code.
+          <Name></Name>
+     Description describes where and when this resource is used. Not used in code.
+          <Description></Description>
+     Text is what to display in the particular dialog/errormessage. Use a CDATA tag, to be able to print exactly what you want without breaking xml. Used in code.
+          <Text>
+            <![CDATA[Example of text]]>
+          </Text>
+  </Text>
+  -->
+
+<Resources>
+  <Resource>
+    <!--
+        Applikationsnamn, visas i alla dialoger och där applikationsnamnet skall användas. t.ex. Mina meddelanden
+    -->
+    <Message>
+      <Id>1</Id>
+      <Text>
+        <![CDATA[Mina meddelanden]]>
+      </Text>
+    </Message>
+    
+    <!--
+        Text som läggs till som en htmlstämpel i bodyn på mailet, när ett mail har skickats till Mina meddelanden.
+        [placeholder] innehåller mottagaren och det översätts i koden.
+        [distributionId] är ett unikt värde för meddelandet, för uppföljning och kontakt med support för läsning i loggar o.s.v. översätts i koden.
+        [deliveryStatus] är ett resultat från skickat meddelande, var det befinner sig i kedjan, översätts i koden.
+        [textToIdentifyMessage] när meddelandet kommer till inkorgen, så skall det flyttas till MinaMeddelanden folder.
+      -->
+    <Message>
+      <Id>2</Id>
+      <Text>
+        <![CDATA[
+          <div style="font-size:15px;">
+            <span>
+              /*** <br/>
+              [textToIdentifyMessage] <br/>
+              För att få leveransstatus, klicka och skicka: mailTo://[statusPrefix][distributionId] <br/>
+              Mottagare: [placeholder] <br/>
+              <br/>
+              <b>Observera:</b> Detta är ingen bekräftelse på att meddelandet har levererats till mottagarens brevlåda.<br/>
+              ***/ <br/>
+            </span>
+          </div>
+        ]]>
+      </Text>
+    </Message>
+    
+    <!--
+      Text för felmeddelande vid validering av mottagare.
+      -->
+    <Message>
+      <Id>3</Id>
+      <Text>
+        <![CDATA[Ogiltigt personnummer alt. organisationsnummer. Kontrollera och försök igen.]]>
+      </Text>
+    </Message>
+    
+    <!--
+      Text för felmeddelande vid utskick till fler än en mottagare.
+      -->
+    <Message>
+      <Id>4</Id>
+      <Text>
+        <![CDATA[Du kan endast skicka till en mottagare i taget.]]>
+      </Text>
+    </Message>
+      
+    <!--
+      Text för felmeddelande när ett meddelande saknar ett ämne/en rubrik.
+      -->
+    <Message>
+      <Id>5</Id>
+      <Text>
+        <![CDATA[Du måste fylla i ämne för meddelandet.]]>
+      </Text>
+    </Message>
+    
+    <!--
+      Text för felmeddelande när ett meddelande innehåller bilder.
+    -->
+    <Message>
+      <Id>6</Id>
+      <Text>
+        <![CDATA[Mina meddelanden saknar stöd för bilder. Klicka ’OK’ för att ta bort bilder automatiskt och granska meddelandet.]]>
+      </Text>
+    </Message>
+    
+     <!--
+      Fel vid sändning till Package, något fungerade inte för att leverera meddelandet.
+     -->
+    <Message>
+      <Id>8</Id>
+      <Text>
+        <![CDATA[Något gick fel vid utskick till ’Mina meddelanden’. Vänligen försök igen senare, om problemet kvarstår kontakta support.]]>
+      </Text>
+    </Message>
+      
+    <!--
+      En slutgiltig fråga om du verkligen vill skicka meddelandet till mottagaren. 
+     -->
+    <Message>
+      <Id>9</Id>
+      <Text>
+        <![CDATA[Vill du skicka meddelandet via ’Mina meddelanden’?]]>
+      </Text>
+    </Message>
+    
+     <!--
+      Ingen kontakt med ConfigurationService.
+     -->
+    <Message>
+      <Id>10</Id>
+      <Text>
+        <![CDATA[Ingen kontakt med Mina meddelanden. Vänligen starta om Outlook och försök igen eller kontakta support.]]>
+      </Text>
+    </Message>
+    
+     <!--
+       Det automatiskt skapade mailet vid kontrol av leveransstatus för ett meddelande. Vid status Delivered.
+       [placeholder] mottagaren och det översätts i koden.
+       [createdDate] när skickades meddelandet, översätts i koden.
+       [deliveryDate] när levererades meddelandet till mottagarens brevlåda.
+       [textToIdentifyMessage] när meddelandet kommer till inkorgen, så skall det flyttas till MinaMeddelanden folder.
+     -->
+    <Message>
+      <Id>11</Id>
+      <Text>
+         <![CDATA[
+            <div style="font-size:15px;">
+              <span>
+                /*** <br/>         
+                [textToIdentifyMessage] <br/>
+                Mottagare: [placeholder] <br />                           
+                Skapat datum: [createdDate] <br/>
+                Levererat datum: [deliveryDate] <br/>
+                Leveransstatus: Meddelandet har levererats till mottagarens digitala brevlåda. <br/>  
+                <br/>
+                <b>Observera:</b> Meddelandet har levererats till mottagarens digitala brevlåda, men är ingen bekräftelse på att meddelandet lästs av mottagaren.<br/>
+                ***/ <br/>
+              </span>
+            </div>
+          ]]>
+      </Text>
+    </Message>
+    
+    <!--
+      Text som visas för användaren när en mottagare finns tillgänglig i FaR. 
+     -->
+   <Message>
+      <Id>12</Id>
+      <Text>
+        <![CDATA[Finns tillgänglig för säker digital post]]>
+      </Text>
+    </Message>
+     
+    <!--
+        Text som visas för användaren när en mottagare inte finns tillgänglig i FaR
+     -->
+    <Message>
+      <Id>13</Id>
+      <Text>
+        <![CDATA[Finns inte tillgänglig för säker digital post]]>
+      </Text>
+    </Message>
+      
+     <!--
+        Det automatiskt skapade mailet vid kontrol av leveransstatus för ett meddelande. Vid status Failed.
+        [placeholder] mottagaren och det översätts i koden.
+        [deliveryStatus] status av ett skickat meddelande, översätts i koden.
+        [createdDate] när skickades meddelandet, översätts i koden.
+        [deliveryDate] när levererades meddelandet till mottagarens brevlåda.
+     -->
+    <Message>
+      <Id>14</Id>
+      <Text>
+         <![CDATA[
+            <div style="font-size:15px;">
+              <span>
+                /*** <br/>         
+                [textToIdentifyMessage] <br/>
+                Mottagare: [placeholder] <br />                             
+                Skapat datum: [createdDate] <br/>
+                Leveransstatus: Meddelandet har inte levererats. Fel har uppstått vid leverans. <br/> 
+                ***/ <br/>
+              </span>
+            </div>
+          ]]>
+      </Text>
+    </Message>
+    
+    <!--
+        Det automatiskt skapade mailet vid kontrol av leveransstatus för ett meddelande. Vid status Pending.
+        [placeholder] mottagaren och det översätts i koden.
+        [deliveryStatus] status av ett skickat meddelande, översätts i koden.
+        [createdDate] när skickades meddelandet, översätts i koden.
+        [deliveryDate] när levererades meddelandet till mottagarens brevlåda.
+     -->
+    <Message>
+      <Id>15</Id>
+      <Text>
+         <![CDATA[
+            <div style="font-size:15px;">
+              <span>
+                /*** <br/>         
+                [textToIdentifyMessage] <br/> 
+                Mottagare: [placeholder] <br />             
+                Skapat datum: [createdDate] <br/>
+                Leveransstatus: Meddelandet är placerat på kö. Kontrollera igen vid ett senare tillfälle. <br/>
+                ***/ <br/>
+              </span>
+            </div>
+          ]]>
+      </Text>
+    </Message>
+    
+    <!--
+        Det automatiskt skapade mailet vid kontrol av leveransstatus för ett meddelande. Vid status Unknown.
+        [placeholder] mottagaren och det översätts i koden.
+        [deliveryStatus] status av ett skickat meddelande, översätts i koden.
+        [createdDate] när skickades meddelandet, översätts i koden.
+        [deliveryDate] när levererades meddelandet till mottagarens brevlåda.
+     -->
+    <Message>
+      <Id>16</Id>
+      <Text>
+         <![CDATA[
+            <div style="font-size:15px;">
+              <span>
+                /*** <br/>         
+                [textToIdentifyMessage] <br/>
+                Mottagare: [placeholder] <br />             
+                Skapat datum: [createdDate] <br/>
+                Leveransstatus: Meddelandet har inte levererats. Fel har uppstått vid leverans.<br/> 
+                ***/ <br/>
+              </span>
+            </div>
+          ]]>
+      </Text>
+    </Message>
+    
+    <!--
+        Fel vid användning av FaRService. För att kontrollera om en mottagare är ansluten. 
+     -->
+    <Message>
+      <Id>17</Id>
+      <Text>
+        <![CDATA[Fel vid kontroll av [placeholder], kan inte använda tjänsten. Vänligen försök igen senare, om problemet kvarstår kontakta support.]]>
+      </Text>
+    </Message>
+      
+    <!--
+        Fel vid kontroll av status, inte en giltig Guid. 
+     -->
+    <Message>
+      <Id>18</Id>
+      <Text>
+        <![CDATA[Fel vid kontroll av status.]]>
+      </Text>
+    </Message>
+    
+    <!--
+        En text som beskriver de autogenererade texterna i alla meddelanden som skickas till avsändaren.
+        
+        OBS OBS OBS OBS!!!!
+        Denna text används som nyckel vid vilka meddelanden som skall flyttas till Mina meddelanden foldern, så gör den så unik som möjligt!.
+     --> 
+    <Message>
+      <Id>19</Id>
+      <Text>
+        <![CDATA[Det här är ett systemgenererat meddelande av Mina meddelanden. Det går inte att svara på detta meddelande.]]>
+      </Text>
+    </Message>
+    
+     <!--
+        Det automatiskt skapade mailet efter sänt meddelande direkt till brevlådan. Utan att använda förmedlingstjänst.
+        Vid status Delivered.
+        [placeholder] mottagaren och det översätts i koden.
+        [textToIdentifyMessage] när meddelandet kommer till inkorgen, så skall det flyttas till MinaMeddelanden folder.
+     --> 
+    <Message>
+      <Id>20</Id>
+      <Text>
+         <![CDATA[
+            <div style="font-size:15px;">
+              <span>
+                /*** <br/>         
+                [textToIdentifyMessage] <br/>
+                Mottagare: [placeholder] <br />
+                Leveransstatus: Meddelandet har levererats till mottagarens digitala brevlåda. <br/>              
+                <br/>
+                <b>Observera:</b> Meddelandet har levererats till mottagarens digitala brevlåda, men är ingen bekräftelse på att meddelandet lästs av mottagaren.<br/>
+                ***/ <br/>
+              </span>
+            </div>
+          ]]>
+      </Text>
+    </Message>
+    <!--
+      Text som visas för användaren när en mottagare finns tillgänglig i FaR. 
+      [placeholder] mottagaren och det översätts i koden.
+     -->
+    <Message>
+      <Id>21</Id>
+      <Text>
+        <![CDATA[[placeholder] finns tillgänglig för säker digital post.]]>
+      </Text>
+    </Message>
+
+    <!--
+        Text som visas för användaren när en mottagare inte finns tillgänglig i FaR
+        [placeholder] mottagaren och det översätts i koden.
+     -->
+    <Message>
+      <Id>22</Id>
+      <Text>
+        <![CDATA[[placeholder] finns inte tillgänglig för säker digital post.]]>
+      </Text>
+    </Message>
+
+    <!--
+        Fel vid kontrol av status. Om ett meddelande har misslyckats/levererats. 
+     -->
+    <Message>
+      <Id>23</Id>
+      <Text>
+        <![CDATA[Fel vid kontroll av status, kan inte använda tjänsten. Vänligen försök igen senare, om problemet kvarstår kontakta support.]]>
+      </Text>
+    </Message>
+
+    <!--
+      Felmeddelande när klienten inte är ansluten till Exchange server, då meddelandet levereras till mottagarens brevlåda, men inget mail skickas till dig själv.
+      -->
+    <Message>
+      <Id>24</Id>
+      <Text>
+        <![CDATA[Det går inte att ansluta till Mina meddelanden just nu. Vänligen kontrollera att du inte jobbar offline.]]>
+      </Text>
+    </Message>
+    <!--
+      Text för felmeddelande när ett meddelande saknar ett ämne/en rubrik.
+      -->
+    <Message>
+      <Id>25</Id>
+      <Text>
+        <![CDATA[Ogiltig bilaga! Vänligen kontrollera bifogade filer]]>
+      </Text>
+    </Message>
+
+    <!--
+      Text för felmeddelande när ett meddelande saknar ett ämne/en rubrik.
+      -->
+    <Message>
+      <Id>26</Id>
+      <Text>
+        <![CDATA[Bifogade filer överskrider den totala storleken för ett meddelande.]]>
+      </Text>
+    </Message>
+  </Resource>  
+</Resources>

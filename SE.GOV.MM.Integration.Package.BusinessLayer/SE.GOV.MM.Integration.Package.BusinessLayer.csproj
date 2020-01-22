@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SE.GOV.MM.Integration.Package.BusinessLayer</RootNamespace>
+    <AssemblyName>SE.GOV.MM.Integration.Package.BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Build Outlook Setup|AnyCPU'">
+    <OutputPath>bin\Build Outlook Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessManager.cs" />
+    <Compile Include="BusinessObjects\PackageDeliveryResult.cs" />
+    <Compile Include="BusinessObjects\PackageDeliveryStatus.cs" />
+    <Compile Include="Handler\PackageHandler.cs" />
+    <Compile Include="Helper\ConfigHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Log\SE.GOV.MM.Integration.Log.csproj">
+      <Project>{924fd5ea-7cbd-4b10-bc6b-55476d86ea4c}</Project>
+      <Name>SE.GOV.MM.Integration.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Package.DataLayer\SE.GOV.MM.Integration.Package.DataLayer.csproj">
+      <Project>{465afba2-693a-4413-bd7c-8481288fbcf9}</Project>
+      <Name>SE.GOV.MM.Integration.Package.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Package.DataTransferObjects\SE.GOV.MM.Integration.Package.DataTransferObjects.csproj">
+      <Project>{c878e85d-4508-493e-9e04-e2de7a04eca1}</Project>
+      <Name>SE.GOV.MM.Integration.Package.DataTransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Package.MessageProxy\SE.GOV.MM.Integration.Package.MessageProxy.csproj">
+      <Project>{5fa484e3-e2ad-41ce-9c84-f03563e610a0}</Project>
+      <Name>SE.GOV.MM.Integration.Package.MessageProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Package.Signing\SE.GOV.MM.Integration.Package.Signing.csproj">
+      <Project>{6ef54f27-03bb-4654-a614-7e138b07c995}</Project>
+      <Name>SE.GOV.MM.Integration.Package.Signing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

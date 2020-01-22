@@ -1,0 +1,243 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.FaR", "SE.GOV.MM.Integration.FaR\SE.GOV.MM.Integration.FaR.csproj", "{A8927F19-0723-4655-A5E5-94518D4C4492}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F5246AA-F65F-440A-A484-897593CF623B} = {4F5246AA-F65F-440A-A484-897593CF623B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Log", "SE.GOV.MM.Integration.Log\SE.GOV.MM.Integration.Log.csproj", "{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Far", "Far", "{DE0C4329-4185-4DDE-8AB6-8590B5139E2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{44816699-5833-4523-B5EC-9A2035BFCB8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.FaR.Contract", "SE.GOV.MM.Integration.FaR.Contract\SE.GOV.MM.Integration.FaR.Contract.csproj", "{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Outlook.BusinessLayer", "SE.GOV.MM.Integration.Outlook.BusinessLayer\SE.GOV.MM.Integration.Outlook.BusinessLayer.csproj", "{21FE7D0D-344E-455F-8119-E03E8319CD09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.FaR.DataTransferObjects", "SE.GOV.MM.Integration.FaR.DataTransferObjects\SE.GOV.MM.Integration.FaR.DataTransferObjects.csproj", "{49D91632-3279-4589-9636-59FAC6465F1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package", "SE.GOV.MM.Integration.Package\SE.GOV.MM.Integration.Package.csproj", "{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.Contract", "SE.GOV.MM.Integration.Package.Contract\SE.GOV.MM.Integration.Package.Contract.csproj", "{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.BusinessLayer", "SE.GOV.MM.Integration.Package.BusinessLayer\SE.GOV.MM.Integration.Package.BusinessLayer.csproj", "{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.DataTransferObjects", "SE.GOV.MM.Integration.Package.DataTransferObjects\SE.GOV.MM.Integration.Package.DataTransferObjects.csproj", "{C878E85D-4508-493E-9E04-E2DE7A04ECA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.FaR.RecipientProxy", "SE.GOV.MM.Integration.FaR.RecipientProxy\SE.GOV.MM.Integration.FaR.RecipientProxy.csproj", "{1027382F-2998-4338-B472-2FB8A0B3AC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinaMeddelanden", "SydnarkeMinaMeddelande\MinaMeddelanden.csproj", "{4F5246AA-F65F-440A-A484-897593CF623B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delivery", "Delivery", "{446B40D9-BAF5-4A84-9133-5CE1F8E6EEBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Delivery", "SE.GOV.MM.Integration.Delivery\SE.GOV.MM.Integration.Delivery.csproj", "{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Delivery.DataLayer", "SE.GOV.MM.Integration.Delivery.DataLayer\SE.GOV.MM.Integration.Delivery.DataLayer.csproj", "{F45C0F11-162B-4168-8910-0DC41B997D38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Delivery.MessageProxy", "SE.GOV.MM.Integration.Delivery.MessageProxy\SE.GOV.MM.Integration.Delivery.MessageProxy.csproj", "{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeliveryMailbox", "DeliveryMailbox", "{5B556E89-EB08-4DAF-A4EA-C7098FF7881E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox", "SE.GOV.MM.Integration.DeliveryMailbox\SE.GOV.MM.Integration.DeliveryMailbox.csproj", "{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox.BusinessLayer", "SE.GOV.MM.Integration.DeliveryMailbox.BusinessLayer\SE.GOV.MM.Integration.DeliveryMailbox.BusinessLayer.csproj", "{397AAC33-AF11-441C-9B01-7857E533040B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy", "SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy\SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy.csproj", "{6A468C41-4643-4CDF-9978-C20CF8877B6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox.Signing", "SE.GOV.MM.Integration.DeliveryMailbox.Signing\SE.GOV.MM.Integration.DeliveryMailbox.Signing.csproj", "{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox.DataLayer", "SE.GOV.MM.Integration.DeliveryMailbox.DataLayer\SE.GOV.MM.Integration.DeliveryMailbox.DataLayer.csproj", "{C015C66A-996C-4324-9376-E358C2F89C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject", "SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject\SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject.csproj", "{F259BED8-F1FD-4F87-BD36-1DE229E258B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.DataLayer", "SE.GOV.MM.Integration.Package.DataLayer\SE.GOV.MM.Integration.Package.DataLayer.csproj", "{465AFBA2-693A-4413-BD7C-8481288FBCF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C} = {1204A8D5-242F-4F91-B021-8A01FBEB5F9C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.MessageProxy", "SE.GOV.MM.Integration.Package.MessageProxy\SE.GOV.MM.Integration.Package.MessageProxy.csproj", "{5FA484E3-E2AD-41CE-9C84-F03563E610A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.GOV.MM.Integration.Package.Signing", "SE.GOV.MM.Integration.Package.Signing\SE.GOV.MM.Integration.Package.Signing.csproj", "{6EF54F27-03BB-4654-A614-7E138B07C995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Build Outlook Setup|Any CPU = Build Outlook Setup|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8927F19-0723-4655-A5E5-94518D4C4492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FE7D0D-344E-455F-8119-E03E8319CD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D91632-3279-4589-9636-59FAC6465F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1027382F-2998-4338-B472-2FB8A0B3AC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5246AA-F65F-440A-A484-897593CF623B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45C0F11-162B-4168-8910-0DC41B997D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397AAC33-AF11-441C-9B01-7857E533040B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C015C66A-996C-4324-9376-E358C2F89C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Build Outlook Setup|Any CPU.ActiveCfg = Build Outlook Setup|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Build Outlook Setup|Any CPU.Build.0 = Build Outlook Setup|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Build Outlook Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Build Outlook Setup|Any CPU.Build.0 = Release|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF54F27-03BB-4654-A614-7E138B07C995}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8927F19-0723-4655-A5E5-94518D4C4492} = {DE0C4329-4185-4DDE-8AB6-8590B5139E2D}
+		{924FD5EA-7CBD-4B10-BC6B-55476D86EA4C} = {44816699-5833-4523-B5EC-9A2035BFCB8A}
+		{D8563BC0-9744-4DDB-A03E-9E07D6DC75F2} = {DE0C4329-4185-4DDE-8AB6-8590B5139E2D}
+		{49D91632-3279-4589-9636-59FAC6465F1E} = {DE0C4329-4185-4DDE-8AB6-8590B5139E2D}
+		{7E1F4BB6-2D0E-4746-8B39-CC89436DDBA1} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{6B48B0C4-FB6F-49D6-82C8-EFAA2C420F1E} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{9FD8345C-1474-4B1E-B282-23A6A5BA9F32} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{C878E85D-4508-493E-9E04-E2DE7A04ECA1} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{1027382F-2998-4338-B472-2FB8A0B3AC06} = {DE0C4329-4185-4DDE-8AB6-8590B5139E2D}
+		{FDCFF3AC-C9CE-475E-B68A-99AC78B229EC} = {446B40D9-BAF5-4A84-9133-5CE1F8E6EEBA}
+		{F45C0F11-162B-4168-8910-0DC41B997D38} = {446B40D9-BAF5-4A84-9133-5CE1F8E6EEBA}
+		{BE5510E9-E3EA-4CD8-8324-31EC56306F2E} = {446B40D9-BAF5-4A84-9133-5CE1F8E6EEBA}
+		{1204A8D5-242F-4F91-B021-8A01FBEB5F9C} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{397AAC33-AF11-441C-9B01-7857E533040B} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{6A468C41-4643-4CDF-9978-C20CF8877B6D} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{D208C6E3-186F-4D9A-8F1F-FC679DE1AB15} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{C015C66A-996C-4324-9376-E358C2F89C75} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{F259BED8-F1FD-4F87-BD36-1DE229E258B6} = {5B556E89-EB08-4DAF-A4EA-C7098FF7881E}
+		{465AFBA2-693A-4413-BD7C-8481288FBCF9} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{5FA484E3-E2AD-41CE-9C84-F03563E610A0} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+		{6EF54F27-03BB-4654-A614-7E138B07C995} = {C0F1438C-2FD1-46D4-8B4F-1BF5607769E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6A3BBCE-171C-466C-909D-791C3F3F48A9}
+	EndGlobalSection
+EndGlobal

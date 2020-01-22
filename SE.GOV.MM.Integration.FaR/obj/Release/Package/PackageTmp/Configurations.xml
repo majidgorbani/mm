@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AttachmentExtensions>
+  <Extension Name=".pdf" ContentType="application/pdf" Filter="pdf files (*.pdf)|*.pdf" />
+  <Extension Name=".doc" ContentType="application/msword" Filter="doc files (*.doc)|*.doc"/>
+  <Extension Name=".docx" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" Filter="docx files (*.docx)|*.docx"/>
+  <Extension Name=".dotx" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.template" Filter="dotx files (*.dotx)|*.dotx"/>
+  <Extension Name=".ics" ContentType="text/calendar" Filter="ics files (*.ics)|*.ics"/>
+</AttachmentExtensions>

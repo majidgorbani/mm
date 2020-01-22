@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SE.GOV.MM.Integration.DeliveryMailbox.DeliveryMailboxService" CodeBehind="DeliveryMailboxService.svc.cs" %>

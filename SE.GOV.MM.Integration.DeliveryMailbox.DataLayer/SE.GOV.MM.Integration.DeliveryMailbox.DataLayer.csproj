@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C015C66A-996C-4324-9376-E358C2F89C75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SE.GOV.MM.Integration.DeliveryMailbox.DataLayer</RootNamespace>
+    <AssemblyName>SE.GOV.MM.Integration.DeliveryMailbox.DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\MailboxOperatorService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject\SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject.csproj">
+      <Project>{f259bed8-f1fd-4f87-bd36-1de229e258b6}</Project>
+      <Name>SE.GOV.MM.Integration.DeliveryMailbox.DataTransferObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy\SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy.csproj">
+      <Project>{6a468c41-4643-4cdf-9978-c20cf8877b6d}</Project>
+      <Name>SE.GOV.MM.Integration.DeliveryMailbox.Proxy.ServiceProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SE.GOV.MM.Integration.Log\SE.GOV.MM.Integration.Log.csproj">
+      <Project>{924fd5ea-7cbd-4b10-bc6b-55476d86ea4c}</Project>
+      <Name>SE.GOV.MM.Integration.Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

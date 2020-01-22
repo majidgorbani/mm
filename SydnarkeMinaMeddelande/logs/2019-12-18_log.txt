@@ -1,0 +1,81 @@
+2019-12-18 14:20:24 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 14:47:54 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 14:47:56 Info Message: Temp directory: TempFolder-18-12_14-47 have been created.
+2019-12-18 14:49:11 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_14-47 folder
+2019-12-18 14:49:20 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_14-47 folder
+2019-12-18 14:51:14 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 14:51:15 Info Message: Temp directory: TempFolder-18-12_14-51 have been created.
+2019-12-18 14:51:19 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_14-51 folder
+2019-12-18 14:51:23 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_14-51 folder
+2019-12-18 14:59:48 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 14:59:49 Info Message: Temp directory: TempFolder-18-12_14-59 have been created.
+2019-12-18 14:59:54 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_14-59 folder
+2019-12-18 14:59:57 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_14-59 folder
+2019-12-18 15:01:07 Info Message: Attached file: Invoice-INF43489.pdf succesfully
+2019-12-18 15:01:19 Info Message: Attached file: MediaGameSummary (1) (18).pdf succesfully
+2019-12-18 15:07:04 Warning Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 15:09:13 Warning Message: 
+
+######################### Starting Send Message Proccess ###################################
+2019-12-18 15:11:46 Warning Message: 
+######################### Starting Send Message Proccess ################################### 
+
+
+2019-12-18 15:14:01 Trace Message: 
+
+2019-12-18 15:14:01 Trace Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 15:30:50 Trace Message: 
+
+2019-12-18 15:30:50 Trace Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 15:30:53 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 15:30:53 Info Message: Temp directory: TempFolder-18-12_15-30 have been created.
+2019-12-18 15:30:54 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_15-30 folder
+2019-12-18 15:30:56 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_15-30 folder
+2019-12-18 15:31:00 Info Message: Attached file: Invoice-INF43489.pdf succesfully
+2019-12-18 15:31:00 Info Message: Attached file: MediaGameSummary (1) (18).pdf succesfully
+2019-12-18 15:31:06 Info Message: folder D:\Headlight\Sources\Lekeberg.Personal\Delat\Mina Meddelanden\DigitalEmployment\DigitalEmployment\TempFolder-18-12_15-30 have been deleted.
+2019-12-18 15:31:11 Trace Message: 
+
+2019-12-18 15:31:11 Trace Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 15:31:16 Info Message: Send Message: recepientId:   
+sender:  
+subjec5t:  
+2019-12-18 15:31:16 Info Message: Temp directory: TempFolder-18-12_15-31 have been created.
+2019-12-18 15:31:20 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_15-31 folder
+2019-12-18 15:31:21 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_15-31 folder
+2019-12-18 15:31:26 Info Message: Attached file: Invoice-INF43489.pdf succesfully
+2019-12-18 15:31:26 Info Message: Attached file: MediaGameSummary (1) (18).pdf succesfully
+2019-12-18 15:31:26 Info Message: folder D:\Headlight\Sources\Lekeberg.Personal\Delat\Mina Meddelanden\DigitalEmployment\DigitalEmployment\TempFolder-18-12_15-31 have been deleted.
+2019-12-18 15:33:55 Trace Message: 
+
+2019-12-18 15:33:55 Trace Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 15:33:55 Info Message: Send Message: 
+recepientId:  
+sender:  
+subject:  
+2019-12-18 15:33:56 Info Message: Temp directory: TempFolder-18-12_15-33 have been created.
+2019-12-18 15:33:56 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_15-33 folder
+2019-12-18 15:33:56 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_15-33 folder
+2019-12-18 15:33:56 Info Message: Attached file: Invoice-INF43489.pdf succesfully
+2019-12-18 15:33:56 Info Message: Attached file: MediaGameSummary (1) (18).pdf succesfully
+2019-12-18 15:33:56 Info Message: folder D:\Headlight\Sources\Lekeberg.Personal\Delat\Mina Meddelanden\DigitalEmployment\DigitalEmployment\TempFolder-18-12_15-33 have been deleted.
+2019-12-18 17:41:39 Trace Message: 
+
+2019-12-18 17:41:40 Trace Message: ######################### Starting Send Message Proccess ###################################
+2019-12-18 17:41:40 Info Message: Send Message: 
+recepientId:  
+sender:  
+subject:  
+2019-12-18 17:41:40 Info Message: Temp directory: TempFolder-18-12_17-41 have been created.
+2019-12-18 17:41:41 Info Message: Temp File Invoice-INF43489.pdf have been created in TempFolder-18-12_17-41 folder
+2019-12-18 17:41:41 Info Message: Temp File MediaGameSummary (1) (18).pdf have been created in TempFolder-18-12_17-41 folder
