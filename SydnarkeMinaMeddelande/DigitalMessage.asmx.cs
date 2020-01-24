@@ -38,25 +38,20 @@ namespace MinaMeddelanden.Sydnarke
         /// <param name="message">Body</param>
         /// <param name="filesinXml">xml string</param>
         [WebMethod]
-        public string SendMessage(string recepientId, string sender, string subject, string message, string filesinXml, string supInfoEmailAddress, string supInfoPhoneNumber, string supInfoText, string supInfoUrI, string senderOrgNumber, string senderOrgName, string certificationBySubjectName)
+        public string SendMessage(  string recepientId, string sender, string subject, string messageBody,  string filesinXml,
+                                    string senderOrgNumber, string senderOrgName, string reference, string certificationBySubjectName,
+                                    string supInfoText, string supInfoEmailAddress, string supInfoPhoneNumber, string supInfoUrI
+                                    )
         {
             string stats;
-            LogManager.Log(new Log { Message = string.Format(Environment.NewLine), Level = Level.Trace });
-            LogManager.Log(new Log { Message = string.Format("######################### Starting Send Message Proccess ###################################")  , Level = Level.Trace });
-            stats = SendMessageToMinaMeddelande(recepientId, sender, subject, message, filesinXml, supInfoEmailAddress, supInfoPhoneNumber, supInfoText, supInfoUrI, senderOrgNumber, senderOrgName, certificationBySubjectName);
+            //LogManager.Log(new Log { Message = string.Format(Environment.NewLine), Level = Level.Trace });
+            LogManager.Log(new Log { Message = string.Format("######################### Starting Send Message Proccess ###################################" +Environment.NewLine )  , Level = Level.Trace });
+
+            stats = SendMessageToMinaMeddelande( recepientId, sender, subject, messageBody, filesinXml,
+                                                senderOrgNumber, senderOrgName, reference, certificationBySubjectName,
+                                                supInfoText,  supInfoEmailAddress, supInfoPhoneNumber, supInfoUrI);
             return stats;
-        }
-
-        [WebMethod]
-        public string TestMessage(string recepientId, string sender, string subject, string message, string filesinXml)
-        {
-
-            LogManager.Log(new Log { Message = string.Format(Environment.NewLine), Level = Level.Trace });
-            LogManager.Log(new Log { Message = string.Format("######################### Starting Send Message Proccess ###################################"), Level = Level.Trace });
-
-            return "Test Ok!";
-           // sendMessageToMinaMeddelande(recepientId, sender, subject, message, filesinXml);
-        }
+        }  
 
 
         /// <summary>
@@ -65,75 +60,76 @@ namespace MinaMeddelanden.Sydnarke
         /// <param name="sender">avsändare </param>
         /// <param name="recepientId">oersonnummer</param>
         /// <param name="subject"></param>
-        /// <param name="message"></param>
+        /// <param name="messageBody"></param>
         /// <param name="stringBaseFile"></param>
-        private string  SendMessageToMinaMeddelande(string recepientId , string sender, string subject , string message , string stringBaseFile, 
-                                                    string supInfoEmailAddress, string supInfoPhoneNumber, string supInfoText, 
-                                                    string supInfoUrI, string senderOrgNumber, string senderOrgName, string certificationBySubjectName)
+        private string  SendMessageToMinaMeddelande(
+            string recepientId , string sender, string subject , string messageBody , string stringBaseFile,
+            string senderOrgNumber, string senderOrgName, string reference, string certificationBySubjectName,
+            string supInfoText, string supInfoEmailAddress, string supInfoPhoneNumber, 
+            string supInfoUrI)
         {
+
+            //string recepientId, string sender, string subject, string messageBody,  string filesinXml,
+            //string senderOrgNumber, string senderOrgName, string reference, string certificationBySubjectName,
+            //string supInfoText, string supInfoEmailAddress, string supInfoPhoneNumber, string supInfoUrI 
+
             List<string> filenNameList = new List<string>();
             string tempDirectoryPath = string.Empty;
             string result = string.Empty;
             HelpMethod f = new HelpMethod();
             //creating log string
-            string logMessage = string.Format(  "Send Message: "    + Environment.NewLine +
-                                                "recepientId: {0} " + Environment.NewLine +
-                                                "sender: {1} "      + Environment.NewLine +
-                                                "subject: {2} ", recepientId, sender, subject );
+
+            //if (recepientId == string.Empty)
+            //{
+
+            //    recepientId = "197902152383";   // User 1
+            //                                    //  recepientId = "198503092390";   // User 2
+
+            //    // recepientId = "167696295455";   // User 3 företag
+
+            //    // recepientId = "200703032383";   // User 4
+
+            //    certificationBySubjectName = "Test_Server";
+            //    sender = "Sydnärke kommun";
+            //    subject = "Test Message";
+            //    messageBody = string.Format(@"<a hrefTill Avsändarmyndigheten</a>" +
+            //        "<p>Är en paragraf som kommer att ge visst utrymme före och efter ett stycke</p>" +
+            //        "<br/> ger ett radbyte<br/>" +
+            //        "<b>this bold text</b>");
 
 
+
+
+            //    supInfoEmailAddress = "peter.stromberg@it.sydnarke.com";
+            //    supInfoPhoneNumber = "-058548103";
+            //    supInfoText = "Support Info Text";
+            //    supInfoUrI = "www.lekeberg.com";
+            //    senderOrgNumber = "162120002981";
+            //    //senderOrgNumber = "162120002982";
+            //    senderOrgName = "Lekebergs kommunnn";
+            //    reference = "Lekeberg Kommun integration";
+
+
+            //}
+
+
+
+            string logMessage = string.Format("**** Send Message: for recepientId: {0} sender: {1} subject: {2} *****", recepientId, sender, subject);
             LogManager.Log(new Log { Message = logMessage, Level = Level.Info }); //write to log
-            tempDirectoryPath =downloadFilesFromBase64(rootPath, stringBaseFile); // returns list of file path 
 
-            if (recepientId == string.Empty)
-            {
-
-                recepientId = "197902152383";   // User 1
-               //  recepientId = "198503092390";   // User 2
-
-               // recepientId = "167696295455";   // User 3 företag
-
-                // recepientId = "200703032383";   // User 4
-
-                certificationBySubjectName = "Test_Server";
-                sender = "Sydnärke kommun";
-                subject = "Test Message";
-                message = string.Format(@"<a hrefTill Avsändarmyndigheten</a>" +
-                    "<p>Är en paragraf som kommer att ge visst utrymme före och efter ett stycke</p>" +
-                    "<br/> ger ett radbyte<br/>" +
-                    "<b>this bold text</b>");
-
-
-             
-
-                supInfoEmailAddress = "peter.stromberg@it.sydnarke.com";
-                supInfoPhoneNumber = "-058548103";
-                supInfoText = "Support Info Text";
-                supInfoUrI = "www.lekeberg.com";
-                senderOrgNumber = "162120002981";
-                //senderOrgNumber = "162120002982";
-                senderOrgName = "Lekebergs kommunnn";
-
-            //    //System.ServiceModel.FaultException`1: 'ERROR CODE: [6009 DISPATCHER_NOT_TRUSTED_SIGNER] - 
-            //    ERROR CODE DESCRIPTION: [The dispatcher is not authorized signer.] - MESSAGE: 
-            //    [Dispatcher [162120002981] is not authorized as signer for the sender 
-            }
-            
             try
             {
-                var mailHelper = new MailHelper();
-                // Creating Mailitem to object specified in Message service
+                tempDirectoryPath = downloadFilesFromBase64(rootPath, stringBaseFile); // returns list of file path 
+                var mailHelper = new MailHelper();           
 
-                string reference = "Lekeberg Kommun integration";//ConfigHelper.ConfigurationEntity.Reference;
                 
-                Mail mailItem = mailHelper.CreateMailItem(sender, recepientId, subject, message, reference, supInfoEmailAddress, supInfoPhoneNumber, supInfoText, supInfoUrI, senderOrgNumber, senderOrgName, certificationBySubjectName);
+                Mail mailItem = mailHelper.CreateMailItem(sender, recepientId, subject, messageBody, reference, supInfoEmailAddress, supInfoPhoneNumber, supInfoText, supInfoUrI, senderOrgNumber, senderOrgName, certificationBySubjectName);
                 
                 getAttachmentToMailItem(ref mailItem, tempDirectoryPath); //Attaching file to mailitem object
                 var messageSender = new MessageSender(sender); // set sender for exp "Lekebergs Kommun"
                 var sentResult = messageSender.SendMailToPackage(mailItem); //send message as a package
 
                 result = sentResult.DeliveryStatus;
-                LogManager.Log(new Log { Message = string.Format("MinaMeddelanden.Sydnarke: Message has been sent with the following status: {0} ", result), Level = Level.Info });
                
 
             }
@@ -146,17 +142,19 @@ namespace MinaMeddelanden.Sydnarke
                 if (Directory.Exists(tempDirectoryPath))
                 {
                     Directory.Delete(tempDirectoryPath, true); // delete directory recursive
-                    LogManager.Log(new Log { Message = string.Format("folder {0} have been deleted.", tempDirectoryPath), Level = Level.Info });
+                    LogManager.Log(new Log { Message = string.Format("folder {0} have been deleted successfully.", tempDirectoryPath), Level = Level.Info });
 
                 }
                
             }
+            LogManager.Log(new Log { Message = string.Format("####### MinaMeddelanden.Sydnarke: The message sending process has been done with the following status: {0} #########" + Environment.NewLine, result), Level = Level.Info });
+
             return result;
         }
 
         private void getAttachmentToMailItem(ref Mail mailItem, string folderPath)
         {
-            folderPath = @"C:\Dev\Projects\MinMeddelanden\SydnarkeMinaMeddelande\UploadsFolder";
+           // folderPath = @"C:\Dev\Projects\MinMeddelanden\SydnarkeMinaMeddelande\UploadsFolder";
             string[] files = Directory.GetFiles(folderPath);
             mailItem.Attachments = new List<BO.Attachment>(); //BO BusinessObject project
   
