@@ -17,7 +17,7 @@ namespace SE.GOV.MM.Integration.Outlook.BusinessLayer.Service {
         /// </summary>
         public IsReachableResult IsReachable(string recipientNumber, string senderOrg)
         {
-            //  LogManager.LogTrace("SE.GOV.MM.Integration.Outlook.Service.RecipientService: incoming IsReachable");
+            LogManager.LogTrace("SE.GOV.MM.Integration.mm.Service.RecipientService: incoming IsReachable");
 
             var request = new IsReachableRequest() { RecipientNumber = recipientNumber };
             var result = new IsReachableResponse();
@@ -29,8 +29,9 @@ namespace SE.GOV.MM.Integration.Outlook.BusinessLayer.Service {
             try
             {
 
-                client = new ServiceClient<IFaR>("WSHttpBinding_IFaR");    
-               // client = new ServiceClient<IFaR>("BasicHttpBinding_IFaR");
+                client = new ServiceClient<IFaR>("WSHttpBinding_IFaR");
+                // client = new ServiceClient<IFaR>("BasicHttpBinding_IFaR");
+                
 
                 var response = client.Proxy.IsReachable(request, senderOrg);
                 
@@ -54,12 +55,12 @@ namespace SE.GOV.MM.Integration.Outlook.BusinessLayer.Service {
             }
             catch (CommunicationException ce)
             {
-                LogManager.Log(new Log.Log() { Exception = ce, Message = "SE.GOV.MM.Integration.Outlook.Service.RecipientService: Communication error, getting a response from FaRService.", EventId = EventId.CommunicationExceptionWithFaR, Level = Level.Error });
+                LogManager.Log(new Log.Log() { Exception = ce, Message = "SE.GOV.MM.Integration.mm.Service.RecipientService: Communication error, getting a response from FaRService.", EventId = EventId.CommunicationExceptionWithFaR, Level = Level.Error });
                 throw ce;
             }
             catch (Exception ex)
             {
-                LogManager.Log(new Log.Log() { Exception = ex, Message = "SE.GOV.MM.Integration.Outlook.Service.RecipientService: Error getting a response from RecipientService.", EventId = EventId.CommunicationExceptionWithFaR, Level = Level.Error });
+                LogManager.Log(new Log.Log() { Exception = ex, Message = "SE.GOV.MM.Integration.mm.Service.RecipientService: Error getting a response from RecipientService.", EventId = EventId.CommunicationExceptionWithFaR, Level = Level.Error });
                 throw ex;
             }
             finally
@@ -72,7 +73,7 @@ namespace SE.GOV.MM.Integration.Outlook.BusinessLayer.Service {
                 client = null;
             }
 
-            LogManager.LogTrace("SE.GOV.MM.Integration.Outlook.Service.RecipientService: leaving IsReachable");
+            LogManager.LogTrace("SE.GOV.MM.Integration.mm.Service.RecipientService: leaving IsReachable");
             return isReachableResult;
         }
     }
