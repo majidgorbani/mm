@@ -69,48 +69,11 @@ namespace MinaMeddelanden.Sydnarke
             string supInfoUrI)
         {
 
-            //string recepientId, string sender, string subject, string messageBody,  string filesinXml,
-            //string senderOrgNumber, string senderOrgName, string reference, string certificationBySubjectName,
-            //string supInfoText, string supInfoEmailAddress, string supInfoPhoneNumber, string supInfoUrI 
-
+            
             List<string> filenNameList = new List<string>();
             string tempDirectoryPath = string.Empty;
             string result = string.Empty;
-            HelpMethod f = new HelpMethod();
-            //creating log string
-
-            //if (recepientId == string.Empty)
-            //{
-
-            //    recepientId = "197902152383";   // User 1
-            //                                    //  recepientId = "198503092390";   // User 2
-
-            //    // recepientId = "167696295455";   // User 3 företag
-
-            //    // recepientId = "200703032383";   // User 4
-
-            //    certificationBySubjectName = "Test_Server";
-            //    sender = "Sydnärke kommun";
-            //    subject = "Test Message";
-            //    messageBody = string.Format(@"<a hrefTill Avsändarmyndigheten</a>" +
-            //        "<p>Är en paragraf som kommer att ge visst utrymme före och efter ett stycke</p>" +
-            //        "<br/> ger ett radbyte<br/>" +
-            //        "<b>this bold text</b>");
-
-
-
-
-            //    supInfoEmailAddress = "peter.stromberg@it.sydnarke.com";
-            //    supInfoPhoneNumber = "-058548103";
-            //    supInfoText = "Support Info Text";
-            //    supInfoUrI = "www.lekeberg.com";
-            //    senderOrgNumber = "162120002981";
-            //    //senderOrgNumber = "162120002982";
-            //    senderOrgName = "Lekebergs kommunnn";
-            //    reference = "Lekeberg Kommun integration";
-
-
-            //}
+            HelpMethod f = new HelpMethod();           
 
 
 
@@ -163,8 +126,7 @@ namespace MinaMeddelanden.Sydnarke
             {
                 foreach (var filepath in files)
                 {
-                    //if (counter == 0)
-                    //{
+                   
                         FileInfo fileAttachment = new FileInfo(filepath);
                         BO.Attachment attac = attachmentHelper.GetAttachment(fileAttachment); // create Attachment object
                         mailItem.Attachments.Add(attac);
@@ -172,9 +134,9 @@ namespace MinaMeddelanden.Sydnarke
                         {
                             LogManager.Log(new Log { Message = string.Format("Attached file: {0} succesfully", fileAttachment.Name), Level = Level.Info });
                         }
-                       // counter++;
+                
 
-                   // }
+            
                    
 
                 }
